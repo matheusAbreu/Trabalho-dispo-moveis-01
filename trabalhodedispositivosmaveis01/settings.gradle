@@ -1,0 +1,2 @@
+rootProject.name = "trabalho de dispositivos maveis 01"
+include ':app'
