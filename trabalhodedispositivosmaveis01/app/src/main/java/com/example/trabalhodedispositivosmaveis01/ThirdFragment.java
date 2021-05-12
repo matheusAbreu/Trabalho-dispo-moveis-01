@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.trabalhodedispositivosmaveis01.databinding.FragmentSecondBinding;
 import com.example.trabalhodedispositivosmaveis01.databinding.FragmentThirdBinding;
 
 public class ThirdFragment extends Fragment {

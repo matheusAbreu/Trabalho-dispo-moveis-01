@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.trabalhodedispositivosmaveis01.FirstFragment"
-        android:label="@string/first_fragment_label"
+        android:label="Calcule Volumes"
         tools:layout="@layout/fragment_first">
 
         <action
@@ -24,7 +24,7 @@
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.trabalhodedispositivosmaveis01.SecondFragment"
-        android:label="@string/second_fragment_label"
+        android:label="Pirâmide Simples"
         tools:layout="@layout/fragment_second">
 
         <action
@@ -34,7 +34,7 @@
     <fragment
         android:id="@+id/ThirdFragment"
         android:name="com.example.trabalhodedispositivosmaveis01.ThirdFragment"
-        android:label="Third Fragment"
+        android:label="Esfera"
         tools:layout="@layout/fragment_third">
 
         <action
@@ -44,7 +44,7 @@
     <fragment
         android:id="@+id/FourthFragment"
         android:name="com.example.trabalhodedispositivosmaveis01.FourthFragment"
-        android:label="Fourth Fragment"
+        android:label="Cilindro"
         tools:layout="@layout/fragment_fourth">
 
         <action

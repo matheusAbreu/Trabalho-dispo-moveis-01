@@ -6,22 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".SecondFragment">
 
+
     <TextView
         android:id="@+id/textview_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/button_second"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/secoundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="230dp"
+                android:layout_height="205dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginHorizontal="90dp"
+                tools:ignore="MissingConstraints">
+
+                <RadioButton
+                    android:id="@+id/radioMm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Milimetros"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioCm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Centimetros"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioDm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Decimetros"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/button_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/previous"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="50dp"
+        android:text="Retornar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+        app:layout_constraintTop_toBottomOf="@id/secoundLayout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
