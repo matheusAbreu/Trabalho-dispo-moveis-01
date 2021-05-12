@@ -21,10 +21,20 @@ public class FirstFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-
         binding = FragmentFirstBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+        String result = "";
+        try{
+            result = getArguments().getString("result");
 
+            if (result.length() > 0)
+                binding.textViewFirst.setText("O resultado final foi de "+result+".");
+        }catch (Exception e){
+            System.out.println(e.toString());
+        }
+
+
+
+        return binding.getRoot();
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {

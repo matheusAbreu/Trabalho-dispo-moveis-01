@@ -7,7 +7,7 @@
     tools:context=".FirstFragment">
 
     <TextView
-        android:id="@+id/textview_first"
+        android:id="@+id/textViewFirst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -22,7 +22,7 @@
         android:id="@+id/firstLayoutTextBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/textview_first"
+        app:layout_constraintTop_toBottomOf="@id/textViewFirst"
         android:orientation="vertical"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="100dp"

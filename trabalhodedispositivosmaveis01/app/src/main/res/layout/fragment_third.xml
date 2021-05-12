@@ -77,6 +77,7 @@
             android:id="@+id/textboxRadius"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="Raio" />
 
     </LinearLayout>
