@@ -31,9 +31,6 @@ public class FirstFragment extends Fragment {
         }catch (Exception e){
             System.out.println(e.toString());
         }
-
-
-
         return binding.getRoot();
     }
 

@@ -23,8 +23,9 @@ public class ThirdFragment extends Fragment {
     ) {
         binding = FragmentThirdBinding.inflate(inflater, container, false);
 
-        /*Android Studio que me obrigou a fazer isso, por mim o componente poderia ter funcionado
-        * normal desdo inicio*/
+        /*Android Studio que me obrigou a fazer isso,
+            por mim o componente poderia ter funcionado
+            normal desdo inicio. Então desculpa pela gamiarra...*/
         binding.checkBoxMm.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View view) {onCheckboxClicked(view);}
         });
