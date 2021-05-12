@@ -79,14 +79,14 @@
             android:id="@+id/textboxHeightPy"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Altura" />
+            android:hint="Altura" />
 
         <EditText
             android:id="@+id/textboxBasePy"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Base"/>
+            android:hint="Base"/>
     </LinearLayout>
 
 

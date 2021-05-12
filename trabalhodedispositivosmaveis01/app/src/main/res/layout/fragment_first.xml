@@ -28,17 +28,19 @@
         android:layout_marginHorizontal="100dp"
         tools:ignore="MissingConstraints">
         <EditText
-            android:id="@+id/textboxHeightPy"
+            android:id="@+id/textboxMainHeightPy"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Altura" />
+            android:inputType="number"
+            android:hint="Altura" />
 
         <EditText
-            android:id="@+id/textboxBasePy"
+            android:id="@+id/textboxMainBasePy"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:layout_marginTop="20dp"
-            android:text="Base"/>
+            android:hint="Base"/>
     </LinearLayout>
     <Button
         android:id="@+id/button_linkSecond"
