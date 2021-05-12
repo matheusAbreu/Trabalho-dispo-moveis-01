@@ -37,15 +37,14 @@ public class SecondFragment extends Fragment {
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                int height;
-                int base;
-                int result;
+                Double height;
+                Double base;
+                Double result;
                 Bundle bundle = new Bundle();
 
                 try{
-                    height = Integer.parseInt(binding.textboxHeightPy.getText().toString());
-                    base = Integer.parseInt(binding.textboxBasePy.getText().toString());
+                    height = Double.parseDouble(binding.textboxHeightPy.getText().toString());
+                    base = Double.parseDouble(binding.textboxBasePy.getText().toString());
 
                     result = (height * base)/3;
                     if(binding.radioMm.isChecked())

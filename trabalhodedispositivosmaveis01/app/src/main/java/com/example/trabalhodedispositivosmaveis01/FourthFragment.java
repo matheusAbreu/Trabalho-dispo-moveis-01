@@ -18,7 +18,7 @@ import com.example.trabalhodedispositivosmaveis01.databinding.FragmentFourthBind
 public class FourthFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
     private FragmentFourthBinding binding;
-    static String[] Medidas = {"Milimetros", "Centimetros", "Decimetros"};
+    static String[] Medidas = {"mm³", "cm³", "dm³"};
 
     @Override
     public View onCreateView(
@@ -42,8 +42,22 @@ public class FourthFragment extends Fragment implements AdapterView.OnItemSelect
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(FourthFragment.this)
-                        .navigate(R.id.action_FourthFragment_to_FirstFragment);
+                Double height;
+                Double radius;
+                Double result;
+
+                try{
+                    height = Double.parseDouble(binding.textboxHeightCy.getText().toString());
+                    radius = Double.parseDouble(binding.textboxRadiusCy.getText().toString());
+
+                    result = Math.PI * Math.pow(radius, 2) * height;
+
+                    binding.textViewFourth.setText("O volume é de " + result+ " " +binding.spMedida.getSelectedItem().toString());
+                }catch (Exception e){
+                    binding.textViewFourth.setText("Houve um erro ao calcular, por favor tente novamente");
+                }
+                //NavHostFragment.findNavController(FourthFragment.this)
+                  //      .navigate(R.id.action_FourthFragment_to_FirstFragment);
             }
         });
     }
