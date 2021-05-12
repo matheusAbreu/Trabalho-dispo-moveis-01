@@ -64,14 +64,31 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/thirdLayoutTextBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/thirdLayout"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="100dp"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/textboxRadius"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Raio" />
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/button_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Retornar"
+        android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/thirdLayout" />
+        app:layout_constraintTop_toBottomOf="@id/thirdLayoutTextBox" />
 </androidx.constraintlayout.widget.ConstraintLayout>

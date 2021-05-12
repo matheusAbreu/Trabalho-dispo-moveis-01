@@ -15,23 +15,59 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Spinner
-        android:id="@+id/spMedida"
-        android:layout_width="209dp"
-        android:layout_height="46dp"
-        android:layout_marginBottom="444dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/fourthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="100dp"
+        tools:ignore="MissingConstraints">
+
+        <Spinner
+            android:id="@+id/spMedida"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/fourthLayoutTextBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fourthLayout"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="100dp"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/textboxHeightCy"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Altura" />
+
+        <EditText
+            android:id="@+id/textboxBaseCy"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Base"/>
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/button_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Retornar"
+        android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+        app:layout_constraintTop_toBottomOf="@id/fourthLayoutTextBox" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
