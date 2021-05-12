@@ -34,19 +34,15 @@ public class FirstFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 EditText heightText = (EditText) getView().findViewById(R.id.textboxMainHeightPy);
-                int valueHeight = Integer.parseInt(heightText.getText().toString());
 
                 EditText baseText = (EditText) getView().findViewById(R.id.textboxMainBasePy);
-                int valueBase = Integer.parseInt(baseText.getText().toString());
 
-                //ConfirmationAction action = SecoundFragmentDirections.confirmationAction();
+                Bundle bundle = new Bundle();
+                bundle.putString("height", heightText.getText().toString() );
+                bundle.putString("base", baseText.getText().toString());
 
-                //action.setHeight(valueHeight);
-                //action.setBase(valueBase);
-
-                //NavHostFragment.findNavController(FirstFragment.this).navigate(action);
                 NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.action_FirstFragment_to_SecondFragment, bundle);
             }
         });
 

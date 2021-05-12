@@ -20,10 +20,12 @@ public class SecondFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-
         binding = FragmentSecondBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+        //textboxHeightPy
+        binding.textboxHeightPy.setText(getArguments().getString("height"));
+        binding.textboxBasePy.setText(getArguments().getString("base"));
 
+        return binding.getRoot();
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
